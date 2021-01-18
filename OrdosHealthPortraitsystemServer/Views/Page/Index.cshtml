@@ -1,0 +1,1225 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style type="text/css">
+        body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        .head {
+            display: flex;
+            height: 50px;
+        }
+
+        .search{
+            background-color: #CCFFCC;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-left: 10px;
+            width: 60px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .Identity_input {
+            margin-top: 10px;
+            margin-left: 30px;
+            width: 200px;
+            height: 20px;
+        }
+
+        .raw , .raw_jkda {
+            display: flex;
+            /* justify-content: center; */
+            flex-wrap: wrap;
+            align-content: flex-start;
+            width: 100%;
+            background-color: #66CCFF;
+        }
+
+        .content {
+            width: 270px;
+            height: 40px;
+            margin-top: 1px;
+            margin-left: 3px;
+            line-height: 40px;
+            font-size: 17px;
+            display: flex;
+            /* flex: 1; */
+        }
+
+        .content_c {
+            /* background-color: snow; */
+            width: 540px;
+            height: 40px;
+            margin-top: 1px;
+            margin-left: 3px;
+            line-height: 40px;
+            font-size: 17px;
+            display: flex;
+        }
+        /* 内容标题 */
+        .raw_title, raw_jkda {
+            background-color: #CCFFFF;
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            font-size: 17px;
+            color: black;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        /* 过敏史 */
+        .gms, .ss, .ws, .sx, .jb, .fqjzs, .mqjzs, .jmjzs, .znjzs {
+            /* justify-content: center; */
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            width: 100%;
+            background-color: #66CCFF;
+        }
+    </style>
+</head>
+<body>
+    <script src="~/Resurces/js/jquery-1.10.2.min.js"></script>
+    <div id="head" class="head">
+        <input id="text" class="Identity_input" />
+        <div class="search">
+            查询
+        </div>
+    </div>
+    <!-- 个人信息 -->
+    <div class="raw">
+        <div class="raw_title">
+            个人基本信息
+        </div>
+        <div class="content">
+            姓名：<div class="name"></div>
+        </div>
+        <div class="content">
+            性别：<div class="gender"></div>
+        </div>
+        <div class="content">
+            年龄：<div class="age"></div>
+        </div>
+        <div class="content">
+            出生日期：<div class="birthday"></div>
+        </div>
+        <div class="content">
+            身高：<div class="height"></div>
+        </div>
+        <div class="content">
+            体重：<div class="weight"></div>
+        </div>
+        <div class="content">
+            证件号：<div class="sfzh"></div>
+        </div>
+        <div class="content">
+            婚姻：<div class="maritalStatus"></div>
+        </div>
+        <div class="content_c">
+            建档医疗机构名称：<div class="jdyljgmc"></div>
+        </div>
+        <div class="content_c">
+            家庭住址：<div class="hkdz"></div>
+        </div>
+        <div class="content">
+            籍贯：<div class="nativeplace"></div>
+        </div>
+        <div class="content">
+            名族代码：<div class="mzdm"></div>
+        </div>
+        <div class="content">
+            民族名称：<div class="mzmc"></div>
+        </div>
+        <div class="content">
+            健康档案编号：<div class="jkdabh"></div>
+        </div>
+        <div class="content">
+            档案状态：<div class="dazt"></div>
+        </div>
+        <div class="content">
+            建档日期：<div class="jdrq"></div>
+        </div>
+        <div class="content">
+            妇女标记：<div class="mchflag"></div>
+        </div>
+        <div class="content">
+            高血压标记：<div class="highflag"></div>
+        </div>
+        <div class="content">
+            糖尿病标记：<div class="mellitusflag"></div>
+        </div>
+        <div class="content">
+            医疗服务标记：<div class="ylfwflag"></div>
+        </div>
+        <div class="content">
+            老年人标记：<div class="lnrflag"></div>
+        </div>
+        <div class="content">
+            儿童标记：<div class="childflag"></div>
+        </div>
+        <div class="content">
+            精神病标记：<div class="jsbflag"></div>
+        </div>
+        <div class="content">
+            健康档案标记：<div class="ggwsfalg"></div>
+        </div>
+        <div class="content">
+            外地标记：<div class="wdbzflag"></div>
+        </div>
+        <div class="content">
+            卡类型：<div class="klx"></div>
+        </div>
+        <div class="content_c">
+            卡号：<div class="kh"></div>
+        </div>
+        <div class="content">
+            血压值：<div class="bloodPressure"></div>
+        </div>
+        <div class="content">
+            舒张压：<div class="bloodcss"></div>
+        </div>
+        <div class="content">
+            收缩压：<div class="bloodbz"></div>
+        </div>
+        <div class="content">
+            心跳：<div class="xt"></div>
+        </div>
+        <div class="content">
+            心跳参数：<div class="xtcss"></div>
+        </div>
+        <div class="content">
+            心跳标志：<div class="xtbz"></div>
+        </div>
+        <div class="content">
+            心跳值：<div class="heartRate"></div>
+        </div>
+        <div class="content_c">
+            药物过敏史：<div class="ywgms"></div>
+        </div>
+        <div class="content_c">
+            既往疾病史：<div class="jwjbs"></div>
+        </div>
+        <div class="content_c">
+            既往手术史：<div class="jwsss"></div>
+        </div>
+        <div class="content_c">
+            既往外伤史：<div class="jwwss"></div>
+        </div>
+        <div class="content_c">
+            既往输血史：<div class="jwsxs"></div>
+        </div>
+        @*<div class="content_c">
+        </div>*@
+
+    </div>
+    <!-- 健康档案 -->
+    <div class="raw_jkda">
+        <div class="raw_title">
+            健康档案
+        </div>
+        <div class="content">
+            建档人：<div class="jdr"></div>
+        </div>
+        <div class="content">
+            转入医生姓名：<div class="zrysxm"></div>
+        </div>
+        <div class="content_c">
+            建档医疗机构名称：<div class="jdyljgmc1"></div>
+        </div>
+        <div class="content_c">
+            建档日期：<div class="jdrq1"></div>
+        </div>
+        <div class="content_c">
+            居住地址：<div class="jzdz"></div>
+        </div>
+        <div class="content_c">
+            户口地址：<div class="hkdz1"></div>
+        </div>
+        <div class="content">
+            居住地-乡：<div class="jzdxng"></div>
+        </div>
+        <div class="content">
+            居住地-街委：<div class="jzdjw"></div>
+        </div>
+        <div class="content">
+            姓名：<div class="xm"></div>
+        </div>
+        <div class="content">
+            性别：<div class="xbbm"></div>
+        </div>
+        <div class="content_c">
+            健康档案编号：<div class="jkdabh1"></div>
+        </div>
+        <div class="content">
+            出生日期：<div class="csrq"></div>
+        </div>
+        <div class="content">
+            证件号码：<div class="zjhm"></div>
+        </div>
+        <div class="content">
+            工作单位名称：<div class="gzdwmc"></div>
+        </div>
+        <div class="content">
+            手机号码：<div class="sjhm"></div>
+        </div>
+        <div class="content">
+            联系人姓名：<div class="lxrxm"></div>
+        </div>
+        <div class="content">
+            联系人电话：<div class="lxrdh"></div>
+        </div>
+        <div class="content_c">
+            常驻类型：<div class="czlx"></div>
+        </div>
+        <div class="content">
+            名族：<div class="mzbm"></div>
+        </div>
+        <div class="content">
+            血型：<div class="xxbm"></div>
+        </div>
+        <div class="content">
+            Rh血型：<div class="rhxxbm"></div>
+        </div>
+        <div class="content">
+            文化程度：<div class="whcdbm"></div>
+        </div>
+        <div class="content">
+            目前职业：<div class="mqzybm"></div>
+        </div>
+        <div class="content">
+            婚姻状况：<div class="hyzkbm"></div>
+        </div>
+        <div class="content_c">
+            医疗费用支付：<div class="ylfyzfbm"></div>
+        </div>
+        <div class="content">
+            药物过敏史标志：<div class="ywgmsbz"></div>
+        </div>
+        <div class="content">
+            暴露史：<div class="blsbm"></div>
+        </div>
+        <div class="content">
+            遗传病史标志：<div class="ycbsbz"></div>
+        </div>
+        <div class="content">
+            残疾情况：<div class="cjqkbm"></div>
+        </div>
+        <div class="content">
+            处方排风设施：<div class="cfpfssbm"></div>
+        </div>
+        <div class="content">
+            燃料类型：<div class="rllxbm"></div>
+        </div>
+        <div class="content">
+            饮水：<div class="ysbm"></div>
+        </div>
+        <div class="content">
+            厕所：<div class="csbm"></div>
+        </div>
+        <div class="content">
+            禽畜栏：<div class="qxl"></div>
+        </div>
+        <div class="content">
+            医疗机构代码：<div class="yljgdm"></div>
+        </div>
+        <div class="content_c">
+            个人档案id：<div class="grdaid"></div>
+        </div>
+        <div class="content">
+            标志服类型：<div class="bzflx"></div>
+        </div>
+        @*<div class="content_c">
+        </div>
+        <div class="content">
+        </div>*@
+        <!-- 过敏史 -->
+        <div class="gms">
+            <div class="raw_title">
+                过敏史
+            </div>
+            <div class="content">
+                疾病史：<div class="gms_jbdm"></div>
+            </div>
+            <div class="content">
+                疾病名称：<div class="gms_jbmc"></div>
+            </div>
+            <div class="content">
+                手术名称：<div class="gms_ssmc"></div>
+            </div>
+            <div class="content">
+                药物过敏源：<div class="gms_ywgmy"></div>
+            </div>
+            <div class="content">
+                药物过敏源名称：<div class="gms_ywgmymc"></div>
+            </div>
+            <div class="content">
+                外伤名称：<div class="gms_ssmc"></div>
+            </div>
+            <div class="content">
+                输血原因：<div class="gms_sxyy"></div>
+            </div>
+            <div class="content">
+                关系代码：<div class="gms_gxdm"></div>
+            </div>
+            <div class="content">
+                关系名称：<div class="gms_gxmc"></div>
+            </div>
+            <div class="content">
+                时间：<div class="gms_time"></div>
+            </div>
+            @*<div class="content_c">
+            </div>*@
+        </div>
+        <!-- 手术 -->
+        <div class="ss">
+            <div class="raw_title">
+                手术
+            </div>
+            <div class="content">
+                疾病史：<div class="ss_jbdm"></div>
+            </div>
+            <div class="content">
+                疾病名称：<div class="ss_jbmc"></div>
+            </div>
+            <div class="content">
+                手术名称：<div class="ss_ssmc"></div>
+            </div>
+            <div class="content">
+                药物过敏源：<div class="ss_ywgmy"></div>
+            </div>
+            <div class="content">
+                药物过敏源名称：<div class="ss_ywgmymc"></div>
+            </div>
+            <div class="content">
+                外伤名称：<div class="ss_wsmc"></div>
+            </div>
+            <div class="content">
+                输血原因：<div class="ss_sxyy"></div>
+            </div>
+            <div class="content">
+                关系代码：<div class="ss_gxdm"></div>
+            </div>
+            <div class="content">
+                关系名称：<div class="ss_gxmc"></div>
+            </div>
+            <div class="content">
+                时间：<div class="ss_time"></div>
+            </div>
+            @*<div class="content_c">
+            </div>*@
+        </div>
+        <!-- 外伤 -->
+        <div class="ws">
+            <div class="raw_title">
+                外伤
+            </div>
+            <div class="content">
+                疾病史：<div class="ws_jbdm"></div>
+            </div>
+            <div class="content">
+                疾病名称：<div class="ws_jbmc"></div>
+            </div>
+            <div class="content">
+                手术名称：<div class="ws_ssmc"></div>
+            </div>
+            <div class="content">
+                药物过敏源：<div class="ws_ywgmy"></div>
+            </div>
+            <div class="content">
+                药物过敏源名称：<div class="ws_ywgmymc"></div>
+            </div>
+            <div class="content">
+                外伤名称：<div class="ws_wsmc"></div>
+            </div>
+            <div class="content">
+                输血原因：<div class="ws_sxyy"></div>
+            </div>
+            <div class="content">
+                关系代码：<div class="ws_gxdm"></div>
+            </div>
+            <div class="content">
+                关系名称：<div class="ws_gxmc"></div>
+            </div>
+            <div class="content">
+                时间：<div class="ws_time"></div>
+            </div>
+            @*<div class="content_c">
+            </div>*@
+        </div>
+        <!-- 输血 -->
+        <div class="sx">
+            <div class="raw_title">
+                输血
+            </div>
+            <div class="content">
+                疾病史：<div class="sx_jbdm"></div>
+            </div>
+            <div class="content">
+                疾病名称：<div class="sx_jbmc"></div>
+            </div>
+            <div class="content">
+                手术名称：<div class="sx_ssmc"></div>
+            </div>
+            <div class="content">
+                药物过敏源：<div class="sx_ywgmy"></div>
+            </div>
+            <div class="content">
+                药物过敏源名称：<div class="sx_ywgmymc"></div>
+            </div>
+            <div class="content">
+                外伤名称：<div class="sx_wsmc"></div>
+            </div>
+            <div class="content">
+                输血原因：<div class="sx_sxyy"></div>
+            </div>
+            <div class="content">
+                关系代码：<div class="sx_gxdm"></div>
+            </div>
+            <div class="content">
+                关系名称：<div class="sx_gxmc"></div>
+            </div>
+            <div class="content">
+                时间：<div class="sx_time"></div>
+            </div>
+            @*<div class="content_c">
+            </div>*@
+        </div>
+        <!-- 疾病史 -->
+        <div class="jb">
+            <div class="raw_title">
+                疾病史
+            </div>
+            <div class="content">
+                疾病史：<div class="jb_jbdm"></div>
+            </div>
+            <div class="content">
+                疾病名称：<div class="jb_jbmc"></div>
+            </div>
+            <div class="content">
+                手术名称：<div class="jb_ssmc"></div>
+            </div>
+            <div class="content">
+                药物过敏源：<div class="jb_ywgmy"></div>
+            </div>
+            <div class="content">
+                药物过敏源名称：<div class="jb_ywgmymc"></div>
+            </div>
+            <div class="content">
+                外伤名称：<div class="jb_wsmc"></div>
+            </div>
+            <div class="content">
+                输血原因：<div class="jb_sxyy"></div>
+            </div>
+            <div class="content">
+                关系代码：<div class="jb_gxdm"></div>
+            </div>
+            <div class="content">
+                关系名称：<div class="jb_gxmc"></div>
+            </div>
+            <div class="content">
+                时间：<div class="jb_time"></div>
+            </div>
+            @*<div class="content_c">
+            </div>*@
+        </div>
+        <!-- 父亲家族史 -->
+        <div class="fqjzs">
+            <div class="raw_title">
+                父亲家族史
+            </div>
+            <div class="content">
+                疾病史：<div class="fqjzs_jbdm"></div>
+            </div>
+            <div class="content">
+                疾病名称：<div class="fqjzs_jbmc"></div>
+            </div>
+            <div class="content">
+                手术名称：<div class="fqjzs_ssmc"></div>
+            </div>
+            <div class="content">
+                药物过敏源：<div class="fqjzs_ywgmy"></div>
+            </div>
+            <div class="content">
+                药物过敏源名称：<div class="fqjzs_ywgmymc"></div>
+            </div>
+            <div class="content">
+                外伤名称：<div class="fqjzs_wsmc"></div>
+            </div>
+            <div class="content">
+                输血原因：<div class="fqjzs_sxyy"></div>
+            </div>
+            <div class="content">
+                关系代码：<div class="fqjzs_gxdm"></div>
+            </div>
+            <div class="content">
+                关系名称：<div class="fqjzs_gxmc"></div>
+            </div>
+            <div class="content">
+                时间：<div class="fqjzs_time"></div>
+            </div>
+            @*<div class="content_c">
+            </div>*@
+        </div>
+        <!-- 母亲家族史 -->
+        <div class="mqjzs">
+            <div class="raw_title">
+                母亲家族史
+            </div>
+            <div class="content">
+                疾病史：<div class="mqjzs_jbdm"></div>
+            </div>
+            <div class="content">
+                疾病名称：<div class="mqjzs_bmc"></div>
+            </div>
+            <div class="content">
+                手术名称：<div class="mqjzs_ssmc"></div>
+            </div>
+            <div class="content">
+                药物过敏源：<div class="mqjzs_ywgmy"></div>
+            </div>
+            <div class="content">
+                药物过敏源名称：<div class="mqjzs_ywgmymc"></div>
+            </div>
+            <div class="content">
+                外伤名称：<div class="mqjzs_wsmc"></div>
+            </div>
+            <div class="content">
+                输血原因：<div class="mqjzs_sxyy"></div>
+            </div>
+            <div class="content">
+                关系代码：<div class="mqjzs_gxdm"></div>
+            </div>
+            <div class="content">
+                关系名称：<div class="mqjzs_gxmc"></div>
+            </div>
+            <div class="content">
+                时间：<div class="mqjzs_time"></div>
+            </div>
+            @*<div class="content_c">
+            </div>*@
+        </div>
+        <!-- 姐妹家族史 -->
+        <div class="jmjzs">
+            <div class="raw_title">
+                姐妹家族史
+            </div>
+            <div class="content">
+                疾病史：<div class="jmjzs_jbdm"></div>
+            </div>
+            <div class="content">
+                疾病名称：<div class="jmjzs_jbmc"></div>
+            </div>
+            <div class="content">
+                手术名称：<div class="jmjzs_ssmc"></div>
+            </div>
+            <div class="content">
+                药物过敏源：<div class="jmjzs_ywgmy"></div>
+            </div>
+            <div class="content">
+                药物过敏源名称：<div class="jmjzs_ywgmymc"></div>
+            </div>
+            <div class="content">
+                外伤名称：<div class="jmjzs_wsmc"></div>
+            </div>
+            <div class="content">
+                输血原因：<div class="jmjzs_sxyy"></div>
+            </div>
+            <div class="content">
+                关系代码：<div class="jmjzs_gxdm"></div>
+            </div>
+            <div class="content">
+                关系名称：<div class="jmjzs_gxmc"></div>
+            </div>
+            <div class="content">
+                时间：<div class="jmjzs_time"></div>
+            </div>
+            @*<div class="content_c">
+            </div>*@
+        </div>
+        <!-- 子女家族史 -->
+        <div class="znjzs">
+            <div class="raw_title">
+                子女家族史
+            </div>
+            <div class="content">
+                疾病史：<div class="znjzs_jbdm"></div>
+            </div>
+            <div class="content">
+                疾病名称：<div class="znjzs_jbmc"></div>
+            </div>
+            <div class="content">
+                手术名称：<div class="znjzs_ssmc"></div>
+            </div>
+            <div class="content">
+                药物过敏源：<div class="znjzs_ywgmy"></div>
+            </div>
+            <div class="content">
+                药物过敏源名称：<div class="znjzs_ywgmymc"></div>
+            </div>
+            <div class="content">
+                外伤名称：<div class="znjzs_wsmc"></div>
+            </div>
+            <div class="content">
+                输血原因：<div class="znjzs_sxyy"></div>
+            </div>
+            <div class="content">
+                关系代码：<div class="znjzs_gxdm"></div>
+            </div>
+            <div class="content">
+                关系名称：<div class="znjzs_gxmc"></div>
+            </div>
+            <div class="content">
+                时间：<div class="znjzs_time"></div>
+            </div>
+            @*<div class="content_c">
+            </div>*@
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(function () {
+            $(".search").click(function () {
+                $.ajax({
+                    url: '@Url.Content("~/HttpServer/HealtyInfo")',
+                    type: 'post',
+                    data: { idCard: $("#text").val(), passWord: $("#text").val().substring($("#text").val().length - 6) },
+                    success: function (msg) {
+                        if (msg.Code == 2) {
+                            alert(msg.Msg)
+                        } else {
+                            let res = JSON.parse(msg.dataContent);
+                            let SelfInfo = JSON.parse(res.MySelfInfo).ordosBasicinfo;
+                            let HealthCondition = JSON.parse(res.getHealthCondition).healthCondition;
+                            let data = JSON.parse(res.HealthDatumInfo).jkda;
+                                //设置姓名
+                                $(".name").html(SelfInfo.name)
+                                //性别
+                                if (data.xbbm == 0) {
+                                    $(".gender").html("未知的性别")
+                                } else if (data.xbbm == 1) {
+                                    $(".gender").html("男")
+                                } else if (data.xbbm == 2) {
+                                    $(".gender").html("女")
+                                } else {
+                                    $(".gender").html("未说明性别")
+                                }
+                                //年龄
+                                $(".age").html(SelfInfo.age)
+                                //出生日期
+                                $(".birthday").html(SelfInfo.birthday)
+                                //身高
+                                if (data.height == null) {
+                                    $(".height").html("未知")
+                                } else {
+                                    $(".height").html(SelfInfo.height)
+                                }
+                                //体重
+                                if (data.weight == null) {
+                                    $(".weight").html("未知")
+                                } else {
+                                    $(".weight").html(SelfInfo.weight)
+                                }
+                                //证件号码
+                                $(".sfzh").html(data.sfzh)
+                                //婚姻状况
+                                $(".maritalStatus").html(SelfInfo.maritalStatus)
+                                //籍贯
+                                if (data.nativeplace == 0) {
+                                    $(".nativeplace").html("未知")
+                                } else {
+                                    $(".nativeplace").html(SelfInfo.nativeplace)
+                                }
+                                //家庭住址
+                                $(".hkdz").html(SelfInfo.hkdz)
+                                //名族代码
+                                $(".mzdm").html(SelfInfo.mzdm)
+                                //名族名称
+                                if (data.mzmc == !NaN) {
+                                    $(".mzmc").html(SelfInfo.mzmc)
+                                } else {
+                                    $(".mzmc").html("未知")
+                                }
+                                //健康档案编号
+                                $(".jkdabh").html(data.jkdabh)
+                                //档案状态
+                                if (data.dazt == null) {
+                                    $(".dazt").html("未知")
+                                } else {
+                                    $(".dazt").html(SelfInfo.dazt)
+                                }
+                                //建档日期
+                                if (data.jdrq == null) {
+                                    $(".jdrq").html("未知")
+                                } else {
+                                    $(".jdrq").html(SelfInfo.jdrq)
+                                }
+                                //建档医疗机构名称
+                                $(".jdyljgmc").html(SelfInfo.jdyljgmc)
+                                //妇女标记
+                                $(".mchflag").html(SelfInfo.mchflag)
+                                //高血压标记
+                                $(".highflag").html(SelfInfo.mchflag)
+                                //糖尿病标记
+                                $(".mellitusflag").html(SelfInfo.mellitusflag)
+                                //医疗服务标记
+                                $(".ylfwflag").html(SelfInfo.ylfwflag)
+                                //老年人标记
+                                $(".lnrflag").html(SelfInfo.lnrflag)
+                                //儿童标记
+                                $(".childflag").html(SelfInfo.childflag)
+                                //精神病标记
+                                $(".jsbflag").html(SelfInfo.childflag)
+                                //健康档案标记
+                                $(".ggwsfalg").html(SelfInfo.ggwsfalg)
+                                //外地标记
+                                $(".wdbzflag").html(SelfInfo.wdbzflag)
+                                //卡号
+                                $(".kh").html(SelfInfo.kh)
+                                //卡类型
+                                $(".klx").html(SelfInfo.klx)
+
+
+                                //血压值
+                                $(".bloodPressure").html(HealthCondition.bloodPressure)
+                                //bloodcss
+                                if (data.bloodcss == !NaN) {
+                                    $(".bloodcss").html(HealthCondition.bloodcss)
+                                } else {
+                                    $(".bloodcss").html("未知")
+                                }
+                                //bloodbz
+                                if (data.bloodbz == !NaN) {
+                                    $(".bloodbz").html(HealthCondition.bloodbz)
+                                } else {
+                                    $(".bloodbz").html("未知")
+                                }
+                                //心跳
+                                if (data.xt == null) {
+                                    $(".xt").html("未知")
+                                } else {
+                                    $(".xt").html(HealthCondition.bloodbz)
+                                }
+                                //心跳参数
+                                if (data.xtcss == NaN) {
+                                    $(".xtcss").html(HealthCondition.bloodbz)
+                                } else {
+                                    $(".xtcss").html("未知")
+                                }
+                                //心跳标志
+                                if (data.xtbz == !NaN) {
+                                    $(".xtbz").html(HealthCondition.xtbz)
+                                } else {
+                                    $(".xtbz").html("未知")
+                                }
+                                //心跳值
+                                if (data.heartRate == null) {
+                                    $(".heartRate").html("未知")
+                                } else {
+                                    $(".heartRate").html(HealthCondition.bloodbz)
+                                }
+                                //药物过敏史
+                                if (data.ywgms == null) {
+                                    $(".ywgms").html("未知")
+                                } else {
+                                    $(".ywgms").html(HealthCondition.ywgms)
+                                }
+                                //既往疾病史
+                                if (data.jwjbs == null) {
+                                    $(".jwjbs").html("未知")
+                                } else {
+                                    $(".jwjbs").html(HealthCondition.jwjbs)
+                                }
+                                //既往手术史
+                                if (data.jwsss == null) {
+                                    $(".jwsss").html("未知")
+                                } else {
+                                    $(".jwsss").html(HealthCondition.jwsss)
+                                }
+                                //既往外伤史
+                                if (data.jwwss == null) {
+                                    $(".jwwss").html("未知")
+                                } else {
+                                    $(".jwwss").html(HealthCondition.jwwss)
+                                }
+                                //既往输血史
+                                if (data.jwsxs == null) {
+                                    $(".jwsxs").html("未知")
+                                } else {
+                                    $(".jwsxs").html(HealthCondition.jwsxs)
+                                }
+
+
+                                //建档人
+                                $(".jdr").html(data.jdr)
+                                //转入医生姓名
+                                $(".zrysxm").html(data.zrysxm)
+                                //建档日期
+                                $(".jdrq1").html(data.jdrq)
+                                //户口地址
+                                $(".hkdz1").html(data.hkdz)
+                                //居住地址
+                                $(".jzdz").html(data.jzdz)
+                                //居住地-乡
+                                $(".jzdxng").html(data.jzdxng)
+                                //居住地-街委
+                                $(".jzdjw").html(data.jzdjw)
+                                //姓名
+                                $(".xm").html(data.xm)
+                                //健康档案编号
+                                $(".jkdabh1").html(data.jkdabh)
+                                //性别
+                                if (data.xbbm == 0) {
+                                    $(".xbbm").html("未知的性别")
+                                } else if (data.xbbm == 1) {
+                                    $(".xbbm").html("男")
+                                } else if (data.xbbm == 2) {
+                                    $(".xbbm").html("女")
+                                } else {
+                                    $(".xbbm").html("未说明性别")
+                                }
+                                //$(".xbbm").append(data.xbbm)
+                                //出生日期
+                                $(".csrq").html(data.csrq)
+                                //证件号码
+                                $(".zjhm").html(data.zjhm)
+                                //工作单位名称
+                                $(".gzdwmc").html(data.gzdwmc)
+                                //手机号码
+                                $(".sjhm").html(data.sjhm)
+                                //联系人姓名
+                                $(".lxrxm").html(data.lxrxm)
+                                //联系人电话
+                                $(".lxrdh").html(data.lxrdh)
+                                //常驻类型
+                                if (data.czlx == 0) {
+                                    $(".jzdz").html(data.hkdz)
+                                } else {
+                                    $(".czlx").html(data.hkdz)
+                                }
+                                //名族
+                                $(".mzbm").html(data.mzmc)
+                                //血型编码
+                                if (data.xxbm == 1) {
+                                    $(".xxbm").html("A型")
+                                } else if (data.xxbm == 2) {
+                                    $(".xxbm").html("B型")
+                                } else if (data.xxbm == 3) {
+                                    $(".xxbm").html("O型")
+                                } else if (data.xxbm == 4) {
+                                    $(".xxbm").html("AB型")
+                                } else {
+                                    $(".xxbm").html("不详")
+                                }
+                                //Rh血型编码
+                                if (data.rhxxbm == 1) {
+                                    $(".rhxxbm").html("阴性")
+                                } else if (data.rhxxbm == 2) {
+                                    $(".rhxxbm").html("阳性")
+                                } else if (data.rhxxbm == 3) {
+                                    $(".rhxxbm").html("不详")
+                                } else {
+                                    $(".rhxxbm").html("未查")
+                                }
+                                //文化程度编码
+                                $(".whcdbm").html(data.whcdmc)
+                                //目前职业编码
+                                $(".mqzybm").html(data.mqzybm)
+                                //婚姻状况编码
+                                if (data.hyzkbm == 10) {
+                                    $(".hyzkbm").html("未婚")
+                                } else if (data.hyzkbm == 20) {
+                                    $(".hyzkbm").html("已婚")
+                                } else if (data.hyzkbm == 21) {
+                                    $(".hyzkbm").html("初婚")
+                                } else if (data.hyzkbm == 22) {
+                                    $(".hyzkbm").html("再婚")
+                                } else if (data.hyzkbm == 23) {
+                                    $(".hyzkbm").html("复婚")
+                                } else if (data.hyzkbm == 30) {
+                                    $(".hyzkbm").html("丧偶")
+                                } else if (data.hyzkbm == 40) {
+                                    $(".hyzkbm").html("离婚")
+                                } else if (data.hyzkbm == 90) {
+                                    $(".hyzkbm").html("未说明的婚姻状况")
+                                }
+                                //医疗费用支付编码
+                                if (data.ylfyzfbm == 01) {
+                                    $(".ylfyzfbm").html("城镇职工基本医疗保险")
+                                } else if (data.ylfyzfbm == 02) {
+                                    $(".ylfyzfbm").html("城镇居民基本医疗保险")
+                                } else if (data.ylfyzfbm == 03) {
+                                    $(".ylfyzfbm").html("新型农村合作医疗")
+                                } else if (data.ylfyzfbm == 04) {
+                                    $(".ylfyzfbm").html("贫因救助")
+                                } else if (data.ylfyzfbm == 05) {
+                                    $(".ylfyzfbm").html("商业医疗保险")
+                                } else if (data.ylfyzfbm == 06) {
+                                    $(".ylfyzfbm").html("全工费")
+                                } else if (data.ylfyzfbm == 07) {
+                                    $(".ylfyzfbm").html("全自费")
+                                } else {
+                                    $(".ylfyzfbm").html("其他")
+                                }
+                                //药物过敏史标志
+                                if (data.ywgmsbz == 0) {
+                                    $(".ywgmsbz").html("无")
+                                } else {
+                                    $(".ywgmsbz").html("有")
+                                }
+                                //暴露史编码
+                                $(".blsbm").html(data.blsmc)
+                                //建档医疗机构名称
+                                $(".jdyljgmc1").html(data.jdyljgmc)
+                                //遗传病史
+                                $(".ycbsbz").html(data.ycbsmc)
+                                //残疾情况编码
+                                $(".cjqkbm").html(data.cjqkmc)
+                                //处方排风设施
+                                if (data.cfpfssbm == 1) {
+                                    $(".cfpfssbm").html("油烟机")
+                                } else if (data.cfpfssbm == 2) {
+                                    $(".cfpfssbm").html("换气扇")
+                                } else if (data.cfpfssbm == 3) {
+                                    $(".cfpfssbm").html("烟囱")
+                                } else {
+                                    $(".cfpfssbm").html("其他")
+                                }
+                                //燃料类型
+                                if (data.rllxbm == 1) {
+                                    $(".rllxbm").html("液化气")
+                                } else if (data.rllxbm == 2) {
+                                    $(".rllxbm").html("煤")
+                                } else if (data.rllxbm == 3) {
+                                    $(".rllxbm").html("天然气")
+                                } else if (data.rllxbm == 4) {
+                                    $(".rllxbm").html("沼气")
+                                } else if (data.rllxbm == 5) {
+                                    $(".rllxbm").html("柴火")
+                                } else {
+                                    $(".rllxbm").html("其他")
+                                }
+                                //饮水编码
+                                if (data.ysbm == 1) {
+                                    $(".ysbm").html("自来水")
+                                } else if (data.ysbm == 2) {
+                                    $(".ysbm").html("经净化过滤的水")
+                                } else if (data.ysbm == 3) {
+                                    $(".ysbm").html("井水")
+                                } else if (data.ysbm == 4) {
+                                    $(".ysbm").html("河湖水")
+                                } else if (data.ysbm == 5) {
+                                    $(".ysbm").html("塘水")
+                                } else {
+                                    $(".ysbm").html("其他")
+                                }
+                                //厕所编码
+                                if (data.csbm == 1) {
+                                    $(".csbm").html("卫生厕所")
+                                } else if (data.csbm == 2) {
+                                    $(".csbm").html("一格或二格粪池式")
+                                } else if (data.csbm == 3) {
+                                    $(".csbm").html("马桶")
+                                } else if (data.csbm == 4) {
+                                    $(".csbm").html("'醅天粪坑")
+                                } else if (data.csbm == 5) {
+                                    $(".csbm").html("'简易棚")
+                                } else {
+                                    $(".csbm").html("'其他")
+                                }
+                                //禽畜栏
+                                if (data.qxl == 1) {
+                                    $(".qxl").html("单室")
+                                } else if (data.qxl == 2) {
+                                    $(".qxl").html("室内")
+                                } else if (data.qxl == 2) {
+                                    $(".qxl").html("室外")
+                                } else {
+                                    $(".qxl").html("无")
+                                }
+                                //医疗机构代码
+                                $(".yljgdm").html(data.yljgdm)
+                                //个人档案id
+                                $(".grdaid").html(data.grdaid)
+                                //标志服类型
+                                $(".bzflx").html(data.bzflx)
+
+                                // 过敏史
+                                if (res.gms == null) {
+                                    $(".gms").hide()
+                                } else {
+                                    $(".gms_jbdm").html(res.gms[0].jbdm)
+                                    $(".gms_jbmc").html(res.gms[0].jbmc)
+                                    $(".gms_ssmc").html(res.gms[0].ssmc)
+                                    $(".gms_ywgmy").html(res.gms[0].ywgmy)
+                                    $(".gms_ywgmymc").html(res.gms[0].ywgmymc)
+                                    $(".gms_wsmc").html(res.gms[0].wsmc)
+                                    $(".gms_sxyy").html(res.gms[0].sxyy)
+                                    $(".gms_gxdm").html(res.gms[0].gxdm)
+                                    $(".gms_gxmc").html(res.gms[0].gxmc)
+                                    $(".gms_time").html(res.gms[0].time)
+                                }
+                                //手术
+                                if (res.ss == null) {
+                                    $(".ss").hide()
+                                } else {
+                                    $(".ss_jbdm").html(res.ss[0].jbdm)
+                                    $(".ss_jbmc").html(res.ss[0].jbmc)
+                                    $(".ss_ssmc").html(res.ss[0].ssmc)
+                                    $(".ss_ywgmy").html(res.ss[0].ywgmy)
+                                    $(".ss_ywgmymc").html(res.ss[0].ywgmymc)
+                                    $(".ss_wsmc").html(res.ss[0].wsmc)
+                                    $(".ss_sxyy").html(res.ss[0].sxyy)
+                                    $(".ss_gxdm").html(res.ss[0].gxdm)
+                                    $(".ss_gxmc").html(res.ss[0].gxmc)
+                                    $(".ss_time").html(res.ss[0].time)
+                                }
+                                //外伤
+                                if (res.ws == null) {
+                                    $(".ws").hide()
+                                } else {
+                                    $(".ws_jbdm").html(res.ws[0].jbdm)
+                                    $(".ws_jbmc").html(res.ws[0].jbmc)
+                                    $(".ws_ssmc").html(res.ws[0].ssmc)
+                                    $(".ws_ywgmy").html(res.ws[0].ywgmy)
+                                    $(".ws_ywgmymc").html(res.ws[0].ywgmymc)
+                                    $(".ws_wsmc").html(res.ws[0].wsmc)
+                                    $(".ws_sxyy").html(res.ws[0].sxyy)
+                                    $(".ws_gxdm").html(res.ws[0].gxdm)
+                                    $(".ws_gxmc").html(res.ws[0].gxmc)
+                                    $(".ws_time").html(res.ws[0].time)
+                                }
+                                //输血
+                                if (res.sx == null) {
+                                    $(".sx").hide()
+                                } else {
+                                    $(".sx_jbdm").html(res.sx[0].jbdm)
+                                    $(".sx_jbmc").html(res.sx[0].jbmc)
+                                    $(".sx_ssmc").html(res.sx[0].ssmc)
+                                    $(".sx_ywgmy").html(res.sx[0].ywgmy)
+                                    $(".sx_ywgmymc").html(res.sx[0].ywgmymc)
+                                    $(".sx_wsmc").html(res.sx[0].wsmc)
+                                    $(".sx_sxyy").html(res.sx[0].sxyy)
+                                    $(".sx_gxdm").html(res.sx[0].gxdm)
+                                    $(".sx_gxmc").html(res.sx[0].gxmc)
+                                    $(".sx_time").html(res.sx[0].time)
+                                }
+                                //疾病史
+                                if (res.jb == null) {
+                                    $(".jb").hide()
+                                } else {
+                                    $(".jb_jbdm").html(res.jb[0].jbdm)
+                                    $(".jb_jbmc").html(res.jb[0].jbmc)
+                                    $(".jb_ssmc").html(res.jb[0].ssmc)
+                                    $(".jb_ywgmy").html(res.jb[0].ywgmy)
+                                    $(".jb_ywgmymc").html(res.jb[0].ywgmymc)
+                                    $(".jb_wsmc").html(res.jb[0].wsmc)
+                                    $(".jb_sxyy").html(res.jb[0].sxyy)
+                                    $(".jb_gxdm").html(res.jb[0].gxdm)
+                                    $(".jb_gxmc").html(res.jb[0].gxmc)
+                                    $(".jb_time").html(res.jb[0].time)
+                                }
+                                //父亲家族史
+                                if (res.fqjzs == null) {
+                                    $(".fqjzs").hide()
+                                } else {
+                                    $(".fqjzs_jbdm").html(res.fqjzs[0].jbdm)
+                                    $(".fqjzs_jbmc").html(res.fqjzs[0].jbmc)
+                                    $(".fqjzs_ssmc").html(res.fqjzs[0].ssmc)
+                                    $(".fqjzs_ywgmy").html(res.fqjzs[0].ywgmy)
+                                    $(".fqjzs_ywgmymc").html(res.fqjzs[0].ywgmymc)
+                                    $(".fqjzs_wsmc").html(res.fqjzs[0].wsmc)
+                                    $(".fqjzs_sxyy").html(res.fqjzs[0].sxyy)
+                                    $(".fqjzs_gxdm").html(res.fqjzs[0].gxdm)
+                                    $(".fqjzs_gxmc").html(res.fqjzs[0].gxmc)
+                                    $(".fqjzs_time").html(res.fqjzs[0].time)
+                                }
+                                //母亲家族史
+                                if (res.mqjzs == null) {
+                                    $(".mqjzs").hide()
+                                } else {
+                                    $(".mqjzs_jbdm").html(res.mqjzs[0].jbdm)
+                                    $(".mqjzs_jbmc").html(res.mqjzs[0].jbmc)
+                                    $(".mqjzs_ssmc").html(res.mqjzs[0].ssmc)
+                                    $(".mqjzs_ywgmy").html(res.mqjzs[0].ywgmy)
+                                    $(".mqjzs_ywgmymc").html(res.mqjzs[0].ywgmymc)
+                                    $(".mqjzs_wsmc").html(res.mqjzs[0].wsmc)
+                                    $(".mqjzs_sxyy").html(res.mqjzs[0].sxyy)
+                                    $(".mqjzs_gxdm").html(res.mqjzs[0].gxdm)
+                                    $(".mqjzs_gxmc").html(res.mqjzs[0].gxmc)
+                                    $(".mqjzs_time").html(res.mqjzs[0].time)
+                                }
+                                //姐妹家族史
+                                if (res.jmjzs == null) {
+                                    $(".jmjzs").hide()
+                                } else {
+                                    $(".jmjzs_jbdm").html(res.jmjzs[0].jbdm)
+                                    $(".jmjzs_jbmc").html(res.jmjzs[0].jbmc)
+                                    $(".jmjzs_ssmc").html(res.jmjzs[0].ssmc)
+                                    $(".jmjzs_ywgmy").html(res.jmjzs[0].ywgmy)
+                                    $(".jmjzs_ywgmymc").html(res.jmjzs[0].ywgmymc)
+                                    $(".jmjzs_wsmc").html(res.jmjzs[0].wsmc)
+                                    $(".jmjzs_sxyy").html(res.jmjzs[0].sxyy)
+                                    $(".jmjzs_gxdm").html(res.jmjzs[0].gxdm)
+                                    $(".jmjzs_gxmc").html(res.jmjzs[0].gxmc)
+                                    $(".jmjzs_time").html(res.jmjzs[0].time)
+                                }
+                                //子女家族史
+                                if (res.znjzs == null) {
+                                    $(".znjzs").hide()
+                                } else {
+                                    $(".znjzs_jbdm").html(res.znjzs[0].jbdm)
+                                    $(".znjzs_jbmc").html(res.znjzs[0].jbmc)
+                                    $(".znjzs_ssmc").html(res.znjzs[0].ssmc)
+                                    $(".znjzs_ywgmy").html(res.znjzs[0].ywgmy)
+                                    $(".znjzs_ywgmymc").html(res.znjzs[0].ywgmymc)
+                                    $(".znjzs_wsmc").html(res.znjzs[0].wsmc)
+                                    $(".znjzs_sxyy").html(res.znjzs[0].sxyy)
+                                    $(".znjzs_gxdm").html(res.znjzs[0].gxdm)
+                                    $(".znjzs_gxmc").htmlhtml(res.znjzs[0].gxmc)
+                                    $(".znjzs_time").html(res.znjzs[0].time)
+                                }
+
+                                alert("查询成功")
+                           
+                        }
+                        
+                        
+                    },
+                    error: function (err) {
+                        alert(err.status);
+                    }
+                })
+            })
+        })
+    
+    </script>
+        @*<script type="text/javascript">
+        $(function () {
+            $.ajax({
+                url: '@Url.Content("~/HttpServer/GetMySelfDatum")',
+                type: 'post',
+                success: function (msg) {
+                    $.each(msg.ordosBasicinfo, function () {
+                        $(".name").val(msg.ordosBasicinf.age)
+                    })
+                    console.log(JSON.parse(msg))
+                },
+                error: function (a, b, c) {
+                    alert(a.status);
+                }
+            });
+        });*@
+</body>
+</html>

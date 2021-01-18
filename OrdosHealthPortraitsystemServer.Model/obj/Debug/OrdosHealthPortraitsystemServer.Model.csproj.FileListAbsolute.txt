@@ -1,0 +1,9 @@
+E:\Work\鄂尔多斯健康档案\OrdosHealthPortraitsystemServer\OrdosHealthPortraitsystemServer.Model\bin\Debug\OrdosHealthPortraitsystemServer.Model.dll
+E:\Work\鄂尔多斯健康档案\OrdosHealthPortraitsystemServer\OrdosHealthPortraitsystemServer.Model\bin\Debug\OrdosHealthPortraitsystemServer.Model.pdb
+E:\Work\鄂尔多斯健康档案\OrdosHealthPortraitsystemServer\OrdosHealthPortraitsystemServer.Model\obj\Debug\OrdosHealthPortraitsystemServer.Model.dll
+E:\Work\鄂尔多斯健康档案\OrdosHealthPortraitsystemServer\OrdosHealthPortraitsystemServer.Model\obj\Debug\OrdosHealthPortraitsystemServer.Model.pdb
+D:\work\鄂尔多斯\OrdosHealthPortraitsystemServer\OrdosHealthPortraitsystemServer.Model\bin\Debug\OrdosHealthPortraitsystemServer.Model.dll
+D:\work\鄂尔多斯\OrdosHealthPortraitsystemServer\OrdosHealthPortraitsystemServer.Model\bin\Debug\OrdosHealthPortraitsystemServer.Model.pdb
+D:\work\鄂尔多斯\OrdosHealthPortraitsystemServer\OrdosHealthPortraitsystemServer.Model\obj\Debug\OrdosHealthPortraitsystemServer.Model.dll
+D:\work\鄂尔多斯\OrdosHealthPortraitsystemServer\OrdosHealthPortraitsystemServer.Model\obj\Debug\OrdosHealthPortraitsystemServer.Model.pdb
+D:\work\鄂尔多斯\OrdosHealthPortraitsystemServer\OrdosHealthPortraitsystemServer.Model\obj\Debug\OrdosHealthPortraitsystemServer.Model.csprojResolveAssemblyReference.cache

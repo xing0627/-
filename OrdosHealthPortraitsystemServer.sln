@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrdosHealthPortraitsystemServer", "OrdosHealthPortraitsystemServer\OrdosHealthPortraitsystemServer.csproj", "{9D8B750A-C911-4BD1-8FB9-B415115CEB34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrdosHealthPortraitsystemServer.Bll", "OrdosHealthPortraitsystemServer.Bll\OrdosHealthPortraitsystemServer.Bll.csproj", "{C966A779-9F9E-476F-BA7B-393C5447F2B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrdosHealthPortraitsystemServer.Model", "OrdosHealthPortraitsystemServer.Model\OrdosHealthPortraitsystemServer.Model.csproj", "{509386CB-F055-4726-B1E1-6717D471653A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrdosHealthPortraitsystemServer.Utility", "OrdosHealthPortraitsystemServer.Utility\OrdosHealthPortraitsystemServer.Utility.csproj", "{219B5F0C-696F-4729-927D-B47FB79316B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D8B750A-C911-4BD1-8FB9-B415115CEB34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D8B750A-C911-4BD1-8FB9-B415115CEB34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D8B750A-C911-4BD1-8FB9-B415115CEB34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D8B750A-C911-4BD1-8FB9-B415115CEB34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C966A779-9F9E-476F-BA7B-393C5447F2B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C966A779-9F9E-476F-BA7B-393C5447F2B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C966A779-9F9E-476F-BA7B-393C5447F2B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C966A779-9F9E-476F-BA7B-393C5447F2B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{509386CB-F055-4726-B1E1-6717D471653A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{509386CB-F055-4726-B1E1-6717D471653A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{509386CB-F055-4726-B1E1-6717D471653A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{509386CB-F055-4726-B1E1-6717D471653A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{219B5F0C-696F-4729-927D-B47FB79316B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{219B5F0C-696F-4729-927D-B47FB79316B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{219B5F0C-696F-4729-927D-B47FB79316B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{219B5F0C-696F-4729-927D-B47FB79316B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
